@@ -1,0 +1,61 @@
+#mooscreen {
+    border:      #f00 solid 1px;
+    font:        12px Courier, monospace;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap:   break-word;       /* Internet Explorer 5.5+ */
+    width: 48em; /* 80 x 0.6 (the width/height ratio of Courier) */
+    /* height: 30em; */ /* 25 x 1.2 (line-height is 1.2) */
+    /* line-height: 1em; */
+    overflow-y: scroll;
+    height: 400px;
+}
+
+#moocommand {
+    font: 12px Courier, monospace;
+}
+
+#moostatus {
+    color:        #A52A2A;
+    font-weight:  bold;
+    font-variant: small-caps;
+}
+
+#moosound {
+    visibility: hidden;
+    height: 0px;
+    width:  0px;
+}
+
+#moobuttons > button {
+    background-repeat: no-repeat;
+    width:  16px;
+    height: 16px;
+    border: 0;
+}
+
+input[type=text], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #DDDDDD;
+}
+
+input[type=text]:focus, textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.imgframe {
+  background: #ffffff;
+  box-shadow: 2px 2px 5px #DADADA;
+}
+

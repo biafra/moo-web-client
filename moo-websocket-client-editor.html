@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>MOO Editor</title>
+    <link rel="stylesheet" href="moo-websocket-client.css" type="text/css" media="screen">
+</head>
+<body>
+
+<div id="mooeditor">
+  <textarea name="mooeditortext" id="mooeditortext"
+      autofocus
+      value=""
+      type="text"
+      cols="79" rows="25"
+      maxlength="2048"
+  ></textarea>
+  <p>
+  <div id="moobuttons">
+  &nbsp;
+  <button value="save" name="save" onclick="moo_editor_send();" style="background: url(/img/upload-2-16.png);"></button>
+  &nbsp;&nbsp;&nbsp;
+  <button value="IGNORE" name="IGNORE" onclick="window.close();" style="background: url(/img/close-window-16.png);" align="right"></button></button>
+  &nbsp;
+  </p>
+  </div>
+</div>
+
+<script src="moo-websocket-client-editor.js" type="text/javascript"></script>
+</body>
+</html>
+

@@ -1,0 +1,12 @@
+o   js: javascript exception handling
+o   js: MCP registry (protocol + callback ?)
+o   js: support for escaped double quote \" in parse_mcp_alist()
+
+
+http://stackoverflow.com/questions/12973877/autoplay-a-wav-file-on-html-code
+
+Problems:
+
+Could not decode a text frame as UTF8
+https://gist.github.com/dougalcampbell/2024272
+

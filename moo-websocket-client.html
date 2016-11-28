@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="moo-websocket-client.css" type="text/css" />
+    <title>MOOsaico websockets</title>
+    <script src="/is.min.js" type="text/javascript"></script>
+    <script src="moo-websocket-client.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="mooscreen"></div>
+<div id="mooinput">
+  <input name="moocommand" id="moocommand"
+      value=""
+      placeholder="Type a command"
+      type="text"
+      size="79" maxlength="200"
+      onchange="wsmoosend();"
+  />
+</div>
+<div id="moobuttons">
+  <table border="0" spanning="0" id="moobuttons" width="120%">
+    <tr>
+      <td spanning="0" id="moobuttons">
+        <button name="screenmodetoggle" title="mode toggle" style="background: url(img/yin-yang-16.png);" onclick="wsmoo_screenmode_toogle();"></button>&nbsp;
+        <button name="@ways" title="@ways" style="background: url(img/wind-rose-16.png);" onclick="wsmoo.send('@ways');"></button>&nbsp;
+        <button name="@who" title="@who" style="background: url(img/user-5-16.png);" onclick="wsmoo.send('@who');"></button>&nbsp;
+        <button name="look" title="look" style="background: url(img/visible-16.png);" onclick="wsmoo.send('look');"></button>&nbsp;
+        <button name="inventory" title="inventory" style="background: url(img/military-backpack-radio-16.png);" onclick="wsmoo.send('inventory');"></button>&nbsp;
+        <button name="@nn" title="@nn" style="background: url(img/mail-16.png);" onclick="wsmoo.send('@nn');"></button>&nbsp;
+      </td>
+      <td align="right" id="moobuttons">
+        <button name="home" title="home" style="background: url(img/home-16.png);" onclick="wsmoo.send('home');"></button>&nbsp;
+        <button name="go games" title="@go #82 / n / look map" style="background: url(img/dice-16.png);" onclick="wsmoo.send('@go #82');wsmoo.send('n');wsmoo.send('look map');"></button>&nbsp;
+        <button name="help" title="help" style="background: url(img/help-16.png);" onclick="wsmoo.send('help');"></button>
+        <button name="reconnect" title="reconnect" style="background: url(img/refresh-2-16.png);" onclick="location.reload(true);"></button>
+      </td>
+    </tr>
+  </table>
+</div>
+<div id="moostatus"></div>
+<div id="moosound"></div>
+
+</body>
+</html>
